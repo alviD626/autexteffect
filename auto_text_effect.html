@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/typewriter-effect@2.3.1/dist/core.js"></script>
+    <link rel="stylesheet" href="auto_text_effect.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!--start heading section-->
+    <div class="header_section">
+      <div class="nav-brand col-2">
+        <p>Auto Text Effect</p>
+      </div>
+
+      <div class="e-detail col-5">
+        <div>
+          <p>Call Our (+880) 0022 2553</p>
+        </div>
+        <div>
+          <p>/</p>
+        </div>
+        <div>
+          <p>hello_design@gmail.com</p>
+        </div>
+      </div>
+
+      <div class="contact col-5">
+        <div class="col-3">
+          <p>Contact Us</p>
+        </div>
+        <div class="col-3 clearfix chat">
+          <p>Let's Chat</p>
+          <span class="chat2"
+            ><img src="img/chat-bubbles-with-ellipsis 1.png" alt=""
+          /></span>
+        </div>
+        <div class="col-2 clearfix">
+          <span class="toggle-bar"><img src="img/notes.png" alt="" /></span>
+        </div>
+      </div>
+    </div>
+    <!--end heading section-->
+
+    <!--body section start-->
+    <div class="body_section">
+      <div class="text-part col-5">
+        <div class="horizontal-part">
+          <hr />
+        </div>
+        <div class="service">
+          <p>Our Services</p>
+        </div>
+        <div id="dev-part">
+          <h1>Web & Desktop<br /><span class="dev">Developmet.</span></h1>
+        </div>
+        <div class="btn-part">
+          <button onclick="#">
+            Contact Us
+            <span class="arrow"><img src="img/arrow.png" alt="" /></span>
+          </button>
+        </div>
+      </div>
+      <div class="image-part col-7">
+        <img src="img/3525460.png" alt="" />
+      </div>
+    </div>
+    <div id="app"></div>
+    <!--body section end-->
+    <script>
+      var app = document.getElementById("app");
+
+      var typewriter = new Typewriter(app, {
+        loop: true,
+      });
+
+      typewriter
+        .typeString("<h1>Web & Desktop <br> Development</h1>")
+        .pauseFor(2500)
+
+        .start();
+    </script>
+  </body>
+</html>
