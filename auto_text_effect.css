@@ -106,7 +106,13 @@ body{
     font-size: 24px;
     line-height: 28px;
 }
-.text-part #dev-part h1{
+.text-part #output h1{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 60px;
+}
+.text-part #output p{
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: 40px;
@@ -143,10 +149,10 @@ body{
 .arrow img{
     margin: -4px 0;
 }
-#dev-part{
+#output{
     color: #DF5646;
 }
-#dev-part .dev{
+#output p{
     color: #fff;
 }
 .image-part{
