@@ -60,12 +60,10 @@
         <div class="horizontal-part">
           <hr />
         </div>
-        <div class="service">
+        <div class="service"> 
           <p>Our Services</p>
         </div>
-        <div class="output" id="output">
-          <h1 class="cursor"></h1>
-          <p></p>
+        <div id="app">
         </div>
         <div class="btn-part">
           <button onclick="#">
@@ -80,7 +78,26 @@
     </div>
     <div id="app"></div>
     <!--body section end-->
+
     <script>
+      var app = document.getElementById('app');
+
+      var typewriter = new Typewriter(app, {
+        loop: true,
+        delay: 75,
+      });
+
+      typewriter
+        .typeString('<h1 style= "color: #DF5646; font-family: Roboto, sans-serif; font-weight: 500;font-size: 40px;line-height: 60px">Web & Desktop</h1>')
+        .pauseFor(300)
+        .typeString('<h1 style= "font-family: Roboto, sans-serif; font-weight: 500;font-size: 40px;line-height: 60px">Development.</h1>')
+        // .typeString('<strong>only <span style="color: #27ae60;">5kb</span> Gzipped!</strong>')
+        .pauseFor(250)
+        .start();
+    </script>
+
+
+    <!-- <script>
             // values to keep track of the number of letters typed, which quote to use. etc. Don't change these values.
       var i = 0,
           a = 0,
@@ -170,6 +187,6 @@
           }
         }
       }
-    </script>
+    </script> -->
   </body>
 </html>
